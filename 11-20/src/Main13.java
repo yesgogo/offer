@@ -11,9 +11,10 @@ public class Main13 {
         }
         // 不是尾结点
         if (tobeDelete.next != null) {
+            // 覆盖
             tobeDelete.val = tobeDelete.next.val;
             tobeDelete.next = tobeDelete.next.next;
-        }else {
+        } else {
             ListNode cur = head;
             while (cur.next != tobeDelete) {
                 cur = cur.next;
